@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Cypress UI自动化测试框架学习（1）- 入门 · Hexo</title><meta name="description" content="Cypress UI自动化测试框架学习（1）- 入门 - naodeng"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://example.com/atom.xml" title="Hexo"><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/sunchongsheng" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/pinggod" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Cypress UI自动化测试框架学习（1）- 入门</h1><div class="post-info">Feb 9, 2022</div><div class="post-content"><h2 id="Introduction"><a href="#Introduction" class="headerlink" title="Introduction"></a>Introduction</h2><p>基于 JavaScript 的前端自动化测试工具，可以对浏览器中运行的任何内容进行快速、简单、可靠的测试</p>
+<p>Cypress 是自集成的，提供了一套完整的端到端测试，无须借助其他外部工具，安装后即可快速地创建、编写、运行测试用例，且对每一步操作都支持回看</p>
+<p>不同于其他只能测试 UI 层的前端测试工具，Cypress 允许编写所有类型的测试，覆盖了测试金字塔模型的所有测试类型【界面测试，集成测试，单元测试】</p>
+<p>Cypress官网：<a target="_blank" rel="noopener" href="https://www.cypress.io/">https://www.cypress.io/</a></p>
+<h2 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started"></a>Getting Started</h2><blockquote>
+<p>下面以MacOS来进行介绍，其他系统可参考官网信息</p>
+</blockquote>
+<h3 id="Operating-System"><a href="#Operating-System" class="headerlink" title="Operating System"></a>Operating System</h3><ul>
+<li>macOS 10.9 and above (64-bit only)</li>
+<li>Node.js 12 or 14 and above</li>
+</ul>
+<h3 id="Before-Started"><a href="#Before-Started" class="headerlink" title="Before Started"></a>Before Started</h3><ul>
+<li>已安装好node.js和npm</li>
+</ul>
+<p><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gqvntxlww1j30k406waau.jpg"></p>
+<ul>
+<li>已安装好vs code或者其他代码编辑器</li>
+</ul>
+<h3 id="Started-and-Run"><a href="#Started-and-Run" class="headerlink" title="Started and Run"></a>Started and Run</h3><ul>
+<li>Step1：通过npm新建项目</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 新建项目文件夹</span><br><span class="line">$ mkdir cypress-demo</span><br><span class="line"># 进入项目文件夹</span><br><span class="line">$ cd cypress-demo</span><br><span class="line"># npm项目环境准备</span><br><span class="line">$ npm init</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Step2：安装cypress</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 项目安装cypress包</span><br><span class="line">$ npm install cypress --save-dev</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>Step3：运行cypress程序</li>
+</ul>
+<blockquote>
+<p>若提示：npm ERR! missing script: cypress:open，可在项目根目录package.json文件的scripts下新增”cypress:open”: “cypress open”，保存后再次运行命令即可</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 启动demo</span><br><span class="line">$ npm run cypress:open</span><br></pre></td></tr></table></figure>
+
+<h3 id="Started-Screenshot"><a href="#Started-Screenshot" class="headerlink" title="Started Screenshot"></a>Started Screenshot</h3><ul>
+<li><p>运行截图<br><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gqvsqw8ytcj323h0u0qp2.jpg"></p>
+</li>
+<li><p>demo用例执行截图<br><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gqvsshqeflj31gl0u0nbf.jpg"></p>
+</li>
+</ul>
+<h2 id="Try-First-Testscript"><a href="#Try-First-Testscript" class="headerlink" title="Try First Testscript"></a>Try First Testscript</h2><h3 id="Testcase"><a href="#Testcase" class="headerlink" title="Testcase"></a>Testcase</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1.访问光谷社区主页http://www.guanggoo.com/</span><br><span class="line">2.验证是否正确跳转到光谷社区页面</span><br><span class="line">3.验证网页标题是否正确</span><br><span class="line">4.点击登录按钮，验证正确跳转到登录页面</span><br><span class="line">5.在登录页面输入用户名和输入密码</span><br><span class="line">6.点击登录按钮，验证登录成功</span><br></pre></td></tr></table></figure>
+
+<h3 id="Testscript"><a href="#Testscript" class="headerlink" title="Testscript"></a>Testscript</h3><ul>
+<li><p>在项目cypress&#x2F;integration下新建demo文件夹</p>
+</li>
+<li><p>在demo文件夹下新建demo-guanggoo.js</p>
+</li>
+<li><p>demo-guanggoo.js编写测试脚本</p>
+</li>
+</ul>
+<blockquote>
+<p>脚本中账号密码需换成自己的账号密码</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">describe(&#x27;first testcase for cypress&#x27;,function()&#123;</span><br><span class="line">    it(&#x27;visit guanggoo homepage and login for guanggoo:&#x27;,function()&#123;</span><br><span class="line"></span><br><span class="line">        // 访问并登录光谷社区</span><br><span class="line">        cy.visit(&#x27;http://www.guanggoo.com/&#x27;) //访问url</span><br><span class="line">        cy.url().should(&#x27;include&#x27;,&#x27;www.guanggoo.com&#x27;)     //验证目标url 是否正确包含光谷社区正确域名 验证是否正确跳转到光谷社区页面</span><br><span class="line">        cy.title().should(&#x27;contain&#x27;,&#x27;光谷社区&#x27;)  //验证页面 title 是否正确</span><br><span class="line">        cy.get(&#x27;:nth-child(1) &gt; .nav-collapse&#x27;).click()   //点击登录按钮</span><br><span class="line">        cy.url().should(&#x27;include&#x27;,&#x27;login&#x27;)  //验证正确跳转到登录页面</span><br><span class="line">        cy.get(&#x27;#email&#x27;) //根据 css 定位用户名输入框</span><br><span class="line">        .type(&#x27;dengnao.123@163.com&#x27;)        //输入用户名</span><br><span class="line">        cy.get(&#x27;#password&#x27;) //根据 css 定位密码输入框</span><br><span class="line">        .type(&#x27;xxxxxxx&#x27;)        //输入密码</span><br><span class="line">        cy.get(&#x27;.btn-success&#x27;).click()   //点击登录按钮</span><br><span class="line"></span><br><span class="line">    &#125;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="Run-Screenshot"><a href="#Run-Screenshot" class="headerlink" title="Run Screenshot"></a>Run Screenshot</h3><ul>
+<li>运行cypress程序</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># 启动</span><br><span class="line">$ npm run cypress:open</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gqvtcq43csj323f0u0qn9.jpg"></p>
+<ul>
+<li>页面上选择点击运行demo-guanggoo.js即可</li>
+</ul>
+<p><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gqvtjib8jdj31g80u0e81.jpg"></p>
+<ul>
+<li>运行通过无报错，代表用例编写成功</li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/2022/02/09/Cypress-UI-Automation-Test-Framework-Learning-Test-Report/" class="prev">PREV</a><a href="/2022/02/08/How-Much-Testing-is-Enough/" class="next">NEXT</a></div><div class="copyright"><p>© 2015 - 2022 <a href="http://example.com">naodeng</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>
