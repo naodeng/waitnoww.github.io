@@ -3,11 +3,11 @@
   <title>软件测试同学</title>
   
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://naod.com.cn/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://naod.com.cn/"/>
   <updated>2022-02-09T02:37:07.174Z</updated>
-  <id>http://example.com/</id>
+  <id>https://naod.com.cn/</id>
   
   <author>
     <name>naodeng</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Cypress UI自动化测试框架学习（2）- 测试报告</title>
-    <link href="http://example.com/2022/02/09/Cypress-UI-Automation-Test-Framework-Learning-Test-Report/"/>
-    <id>http://example.com/2022/02/09/Cypress-UI-Automation-Test-Framework-Learning-Test-Report/</id>
+    <link href="https://naod.com.cn/2022/02/09/Cypress-UI-Automation-Test-Framework-Learning-Test-Report/"/>
+    <id>https://naod.com.cn/2022/02/09/Cypress-UI-Automation-Test-Framework-Learning-Test-Report/</id>
     <published>2022-02-09T02:34:06.000Z</published>
     <updated>2022-02-09T02:37:07.174Z</updated>
     
@@ -32,14 +32,14 @@
     
     
     
-    <category term="软件测试" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    <category term="软件测试" scheme="https://naod.com.cn/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>Cypress UI自动化测试框架学习（1）- 入门</title>
-    <link href="http://example.com/2022/02/09/Cypress-UI-Automation-Testing-Framework-Learning-Getting-Started/"/>
-    <id>http://example.com/2022/02/09/Cypress-UI-Automation-Testing-Framework-Learning-Getting-Started/</id>
+    <link href="https://naod.com.cn/2022/02/09/Cypress-UI-Automation-Testing-Framework-Learning-Getting-Started/"/>
+    <id>https://naod.com.cn/2022/02/09/Cypress-UI-Automation-Testing-Framework-Learning-Getting-Started/</id>
     <published>2022-02-09T02:32:06.000Z</published>
     <updated>2022-02-09T02:37:04.468Z</updated>
     
@@ -53,14 +53,14 @@
     
     
     
-    <category term="软件测试" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
+    <category term="软件测试" scheme="https://naod.com.cn/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
   <entry>
     <title>多少测试覆盖度才算足够</title>
-    <link href="http://example.com/2022/02/08/How-Much-Testing-is-Enough/"/>
-    <id>http://example.com/2022/02/08/How-Much-Testing-is-Enough/</id>
+    <link href="https://naod.com.cn/2022/02/08/How-Much-Testing-is-Enough/"/>
+    <id>https://naod.com.cn/2022/02/08/How-Much-Testing-is-Enough/</id>
     <published>2022-02-08T13:56:40.000Z</published>
     <updated>2022-02-08T14:12:37.039Z</updated>
     
@@ -81,7 +81,7 @@
     
     
     
-    <category term="软件测试，测试覆盖率" scheme="http://example.com/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%EF%BC%8C%E6%B5%8B%E8%AF%95%E8%A6%86%E7%9B%96%E7%8E%87/"/>
+    <category term="软件测试，测试覆盖率" scheme="https://naod.com.cn/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%EF%BC%8C%E6%B5%8B%E8%AF%95%E8%A6%86%E7%9B%96%E7%8E%87/"/>
     
   </entry>
   

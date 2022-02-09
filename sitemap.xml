@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://example.com/2022/02/09/Cypress-UI-Automation-Test-Framework-Learning-Test-Report/</loc>
+    <loc>https://naod.com.cn/2022/02/09/Cypress-UI-Automation-Test-Framework-Learning-Test-Report/</loc>
     
     <lastmod>2022-02-09</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2022/02/09/Cypress-UI-Automation-Testing-Framework-Learning-Getting-Started/</loc>
+    <loc>https://naod.com.cn/2022/02/09/Cypress-UI-Automation-Testing-Framework-Learning-Getting-Started/</loc>
     
     <lastmod>2022-02-09</lastmod>
     
@@ -20,7 +20,7 @@
   </url>
   
   <url>
-    <loc>http://example.com/2022/02/08/How-Much-Testing-is-Enough/</loc>
+    <loc>https://naod.com.cn/2022/02/08/How-Much-Testing-is-Enough/</loc>
     
     <lastmod>2022-02-08</lastmod>
     
@@ -30,7 +30,7 @@
   
 
   <url>
-    <loc>http://example.com/</loc>
+    <loc>https://naod.com.cn/</loc>
     <lastmod>2022-02-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -38,14 +38,14 @@
 
   
   <url>
-    <loc>http://example.com/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/</loc>
+    <loc>https://naod.com.cn/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95/</loc>
     <lastmod>2022-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://example.com/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%EF%BC%8C%E6%B5%8B%E8%AF%95%E8%A6%86%E7%9B%96%E7%8E%87/</loc>
+    <loc>https://naod.com.cn/tags/%E8%BD%AF%E4%BB%B6%E6%B5%8B%E8%AF%95%EF%BC%8C%E6%B5%8B%E8%AF%95%E8%A6%86%E7%9B%96%E7%8E%87/</loc>
     <lastmod>2022-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
