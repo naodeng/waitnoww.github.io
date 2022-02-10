@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://naod.com.cn/2021/05/09/Cypress-UI-Automation-Test-Framework-Learning-Test-Report/</loc>
+    <loc>https://naod.com.cn/2021/05/06/Cypress-UI-Automation-Testing-Framework-Learning-Getting-Started/</loc>
     
     <lastmod>2022-02-10</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://naod.com.cn/2021/05/06/Cypress-UI-Automation-Testing-Framework-Learning-Getting-Started/</loc>
+    <loc>https://naod.com.cn/2021/05/09/Cypress-UI-Automation-Test-Framework-Learning-Test-Report/</loc>
     
     <lastmod>2022-02-10</lastmod>
     
@@ -73,5 +73,12 @@
   </url>
   
 
+  
+  <url>
+    <loc>https://naod.com.cn/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/</loc>
+    <lastmod>2022-02-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>
