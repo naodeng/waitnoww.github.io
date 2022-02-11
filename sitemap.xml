@@ -111,13 +111,6 @@
   </url>
   
   <url>
-    <loc>https://naod.com.cn/tags/Git/</loc>
-    <lastmod>2022-02-11</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E8%A6%86%E7%9B%96%E7%8E%87/</loc>
     <lastmod>2022-02-11</lastmod>
     <changefreq>weekly</changefreq>
@@ -126,6 +119,13 @@
   
   <url>
     <loc>https://naod.com.cn/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</loc>
+    <lastmod>2022-02-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://naod.com.cn/tags/Git/</loc>
     <lastmod>2022-02-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
