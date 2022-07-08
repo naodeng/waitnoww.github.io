@@ -897,5 +897,82 @@ Dropbox：https://www.dropbox.com</description>
 我现在觉得所谓的瓶颈，其实不在于外界。在于自己能力的不上不下，所以还是认准方向，好好努力吧</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://naod.com.cn/1/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/1/01/</guid>
+      <description>Cypress UI自动化测试框架学习（1）-上手 Introduction 基于 JavaScript 的前端自动化测试工具，可以对浏览器中运行的任何内容进行快速、简单、可靠的测试
+Cypress 是自集成的，提供了一套完整的端到端测试，无须借助其他外部工具，安装后即可快速地创建、编写、运行测试用例，且对每一步操作都支持回看
+不同于其他只能测试 UI 层的前端测试工具，Cypress 允许编写所有类型的测试，覆盖了测试金字塔模型的所有测试类型【界面测试，集成测试，单元测试】
+Cypress官网：https://www.cypress.io/
+Getting Started 下面以MacOS来进行介绍，其他系统可参考官网信息
+Operating System macOS 10.9 and above (64-bit only) Node.js 12 or 14 and above Before Started 已安装好node.js和npm 已安装好vs code或者其他代码编辑器 Started and Run Step1：通过npm新建项目 # 新建项目文件夹 $ mkdir cypress-demo # 进入项目文件夹 $ cd cypress-demo # npm项目环境准备 $ npm init Step2：安装cypress # 项目安装cypress包 $ npm install cypress --save-dev Step3：运行cypress程序 若提示：npm ERR! missing script: cypress:open，可在项目根目录package.json文件的scripts下新增&amp;quot;cypress:open&amp;quot;: &amp;ldquo;cypress open&amp;rdquo;，保存后再次运行命令即可</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://naod.com.cn/1/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/1/01/</guid>
+      <description>Cypress UI自动化测试框架学习（2）- 测试报告 写在前面 由于Cypress测试报告是建立在Mocha测试报告之上的，这意味着任何为Mocha构建的报告程序都可以与Cypress一起使用。
+以下是内置的Mocha测试类型列表（Cypress也同样支持）：https://mochajs.org/#reporters
+前置准备工作 在package.json文件的scripts模块加入了如下脚本：&amp;ldquo;cypress:run&amp;rdquo;:&amp;ldquo;cypress run&amp;rdquo;，便于后面生成报告
+不同运行脚本的区别：
+cypress run：是以无头浏览器模式跑测试用例文件夹下的所有测试用例 cypress open：会打开测试用例集的界面，需要手动运行 常用报告类型 spec格式报告 运行命令 $ npm run cypress:run --reporter=spec 报告截图 Dot格式报告 前置：在cypress.json文件新增&amp;quot;reporter&amp;quot;: &amp;ldquo;dot&amp;quot;信息
+运行方式：
+$ npm run cypress:run 报告截图 json格式报告 前置：在cypress.json文件新增&amp;quot;reporter&amp;rdquo;: &amp;ldquo;json&amp;quot;信息
+运行方式：
+$ npm run cypress:run 报告截图 List格式报告 前置：在cypress.json文件新增&amp;quot;reporter&amp;rdquo;: &amp;ldquo;list&amp;quot;信息
+运行方式：
+$ npm run cypress:run 报告截图 NYAN格式报告 前置：在cypress.json文件新增&amp;quot;reporter&amp;rdquo;: &amp;ldquo;nyan&amp;quot;信息
+运行方式：
+$ npm run cypress:run 报告截图 高大上报告类型 Mochawesome格式报告 前置：安装 Mocha、Mochawesome 至项目中 npm install --save-dev mocha npm install --save-dev mochawesome 在cypress.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://naod.com.cn/1/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/1/01/</guid>
+      <description>Cypress UI自动化测试框架学习（3）- 元素定位，操作和断言 元素定位 谈到UI自动化测试，不管是web端还是移动端，页面元素的各种操作在编写测试脚本时都会涉及，如果想写出高通过率和高健壮性的自动化测试用例，必须要确保正确高效的页面元素识别和使用。
+cypress框架除了支持常用的元素定位，还提供了好用的JQuery css选择器.
+下面会介绍常用的元素定位方法，常用的定位方式，以及框架自带可视化自助元素定位方法
+常用元素定位 #id定位 描述：通过元素的 id 属性来定位
+前提：定位的元素css样式须存在id属性且唯一
+//元素前端代码示例 &amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;email&amp;quot; name=&amp;quot;email&amp;quot; placeholder=&amp;quot;&amp;quot; class=&amp;quot;form-control&amp;quot;&amp;gt;
+示例代码 cy.get(&#39;#email&#39;) .class定位 描述：通过元素的class属性来定位
+前提：定位的元素css样式存在class属性且唯一
+//元素前端代码示例 &amp;lt;a class=&amp;quot;navbar-brand&amp;quot; href=&amp;quot;/&amp;quot;&amp;gt;&amp;lt;img width=&amp;quot;150&amp;quot; height=&amp;quot;28&amp;quot; border=&amp;quot;0&amp;quot; align=&amp;quot;default&amp;quot; alt=&amp;quot;光谷社区&amp;quot; src=&amp;quot;http://cdn.guanggoo.com//static/images/guanggoonew.png&amp;quot;&amp;gt;&amp;lt;/a&amp;gt;
+示例代码 cy.get(&#39;.navbar-brand&#39;)
+name定位 描述：通过元素name定位
+前提：定位的元素css样式存在name属性且唯一 //元素前端代码示例 &amp;lt;input type=&amp;quot;text&amp;quot; id=&amp;quot;email&amp;quot; name=&amp;quot;email&amp;quot; placeholder=&amp;quot;&amp;quot; class=&amp;quot;form-control&amp;quot;&amp;gt;
+示例代码
+cy.get(&#39;input[name=&amp;quot;email&amp;quot;]&#39;)
+常用定位方式 .get() 描述：使用 get() 定位元素，定位元素用 CSS selectors ，跟 jQuery 一样 示例代码 cy.get(&#39;#email&#39;)
+.contains() 描述：可以使用cy.contains（）根据元素的内容找到元素
+示例代码
+cy.contains(‘value’) cy.get(‘div[name=“div_name”]’).contains(‘value’)
+.within() 描述：可以在特定的DOM元素中找到元素
+示例代码</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://naod.com.cn/1/01/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://naod.com.cn/1/01/</guid>
+      <description>Cypress UI自动化测试框架学习（4）- 数据驱动，方法封装参数化和测试框架 测试数据驱动 js格式测试数据驱动 简介 数据以js格式存储，使用js的import方法导入使用
+使用方法 新建测试数据js文件 示例：在项目的cypress/integration 文件夹下新建testData目录,然后在该目录下创建一个js文件，示例文件名为：testLogin.data.js
+testLogin.data.js示例代码如下：
+//账号密码记得换成自己的 export const testLoginUserEmail = [ { summary: &amp;#34;正确邮箱账号登录验证&amp;#34;, username:&amp;#34;dengnao.123@163.com&amp;#34;, password:&amp;#34;xxxx&amp;#34; } ] export const testLoginUserId = [ { summary: &amp;#34;正确id账号登录验证&amp;#34;, username:&amp;#34;waitnoww&amp;#34;, password:&amp;#34;xxxx&amp;#34; } ] export const testLoginUserMobilephone = [ { summary: &amp;#34;正确手机号账号登录验证&amp;#34;, username:&amp;#34;18888139031&amp;#34;, password:&amp;#34;xxxx&amp;#34; } ] 编写测试用例 在项目cypress/integration文件夹下新建js测试用例文件，示例文件名为：testLogin_guanggoo_data_by_js.js
+示例代码如下：
+// 导入js文件获取测试数据 import { testLoginUserEmail, testLoginUserId, testLoginUserMobilephone } from &amp;#34;./testData/testLogin.data&amp;#34;; // 测试用例 describe(&amp;#34;光谷社区登录验证&amp;#34;, function () { // 执行用例执行用例之前先进入首页 beforeEach(function () { // 访问并登录光谷社区 cy.</description>
+    </item>
+    
   </channel>
 </rss>
