@@ -14,7 +14,8 @@
       <pubDate>Fri, 08 Jul 2022 09:49:24 +0800</pubDate>
       
       <guid>https://naod.com.cn/2022/07/cypress-ui-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A01-%E4%B8%8A%E6%89%8B/</guid>
-      <description>Introduction 基于 JavaScript 的前端自动化测试工具，可以对浏览器中运行的任何内容进行快速、简单、可靠的测试
+      <description>这一篇文章主要介绍一下如何快速上手 cypress 这个自动化测试框架
+Introduction 基于 JavaScript 的前端自动化测试工具，可以对浏览器中运行的任何内容进行快速、简单、可靠的测试
 Cypress 是自集成的，提供了一套完整的端到端测试，无须借助其他外部工具，安装后即可快速地创建、编写、运行测试用例，且对每一步操作都支持回看
 不同于其他只能测试 UI 层的前端测试工具，Cypress 允许编写所有类型的测试，覆盖了测试金字塔模型的所有测试类型【界面测试，集成测试，单元测试】
 Cypress 官网：https://www.cypress.io/
@@ -28,7 +29,8 @@ Operating System macOS 10.9 and above (64-bit only) Node.js 12 or 14 and above B
       <pubDate>Fri, 08 Jul 2022 09:49:24 +0800</pubDate>
       
       <guid>https://naod.com.cn/2022/07/cypress-ui-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A02-%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A/</guid>
-      <description>写在前面 由于 Cypress 测试报告是建立在 Mocha 测试报告之上的，这意味着任何为 Mocha 构建的报告程序都可以与 Cypress 一起使用。
+      <description>这一篇文章主要介绍一下如何去使用不同格式的 cypress 自动化测试报告模版
+写在前面 由于 Cypress 测试报告是建立在 Mocha 测试报告之上的，这意味着任何为 Mocha 构建的报告程序都可以与 Cypress 一起使用。
 以下是内置的 Mocha 测试类型列表（Cypress 也同样支持）：https://mochajs.org/#reporters
 前置准备工作 在 package.json 文件的 scripts 模块加入了如下脚本：&amp;ldquo;cypress:run&amp;rdquo;:&amp;ldquo;cypress run&amp;rdquo;，便于后面生成报告
 不同运行脚本的区别：
@@ -37,8 +39,7 @@ cypress run：是以无头浏览器模式跑测试用例文件夹下的所有测
 $ npm run cypress:run 报告截图 json 格式报告 前置：在 cypress.json 文件新增&amp;quot;reporter&amp;rdquo;: &amp;ldquo;json&amp;quot;信息
 运行方式：
 $ npm run cypress:run 报告截图 List 格式报告 前置：在 cypress.json 文件新增&amp;quot;reporter&amp;rdquo;: &amp;ldquo;list&amp;quot;信息
-运行方式：
-$ npm run cypress:run 报告截图 NYAN 格式报告 前置：在 cypress.</description>
+运行方式：</description>
     </item>
     
     <item>

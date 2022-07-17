@@ -4,7 +4,8 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Cypress UI 自动化测试框架学习（2）- 测试报告 - 软件测试同学</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta itemprop="name" content="Cypress UI 自动化测试框架学习（2）- 测试报告">
-<meta itemprop="description" content="写在前面 由于 Cypress 测试报告是建立在 Mocha 测试报告之上的，这意味着任何为 Mocha 构建的报告程序都可以与 Cypress 一起使用。
+<meta itemprop="description" content="这一篇文章主要介绍一下如何去使用不同格式的 cypress 自动化测试报告模版
+写在前面 由于 Cypress 测试报告是建立在 Mocha 测试报告之上的，这意味着任何为 Mocha 构建的报告程序都可以与 Cypress 一起使用。
 以下是内置的 Mocha 测试类型列表（Cypress 也同样支持）：https://mochajs.org/#reporters
 前置准备工作 在 package.json 文件的 scripts 模块加入了如下脚本：&ldquo;cypress:run&rdquo;:&ldquo;cypress run&rdquo;，便于后面生成报告
 不同运行脚本的区别：
@@ -13,12 +14,12 @@ cypress run：是以无头浏览器模式跑测试用例文件夹下的所有测
 $ npm run cypress:run 报告截图 json 格式报告 前置：在 cypress.json 文件新增&quot;reporter&rdquo;: &ldquo;json&quot;信息
 运行方式：
 $ npm run cypress:run 报告截图 List 格式报告 前置：在 cypress.json 文件新增&quot;reporter&rdquo;: &ldquo;list&quot;信息
-运行方式：
-$ npm run cypress:run 报告截图 NYAN 格式报告 前置：在 cypress."><meta itemprop="datePublished" content="2022-07-08T09:49:24+08:00" />
+运行方式："><meta itemprop="datePublished" content="2022-07-08T09:49:24+08:00" />
 <meta itemprop="dateModified" content="2022-07-08T09:49:24+08:00" />
-<meta itemprop="wordCount" content="153">
+<meta itemprop="wordCount" content="156">
 <meta itemprop="keywords" content="自动化测试,cypress," /><meta property="og:title" content="Cypress UI 自动化测试框架学习（2）- 测试报告" />
-<meta property="og:description" content="写在前面 由于 Cypress 测试报告是建立在 Mocha 测试报告之上的，这意味着任何为 Mocha 构建的报告程序都可以与 Cypress 一起使用。
+<meta property="og:description" content="这一篇文章主要介绍一下如何去使用不同格式的 cypress 自动化测试报告模版
+写在前面 由于 Cypress 测试报告是建立在 Mocha 测试报告之上的，这意味着任何为 Mocha 构建的报告程序都可以与 Cypress 一起使用。
 以下是内置的 Mocha 测试类型列表（Cypress 也同样支持）：https://mochajs.org/#reporters
 前置准备工作 在 package.json 文件的 scripts 模块加入了如下脚本：&ldquo;cypress:run&rdquo;:&ldquo;cypress run&rdquo;，便于后面生成报告
 不同运行脚本的区别：
@@ -27,8 +28,7 @@ cypress run：是以无头浏览器模式跑测试用例文件夹下的所有测
 $ npm run cypress:run 报告截图 json 格式报告 前置：在 cypress.json 文件新增&quot;reporter&rdquo;: &ldquo;json&quot;信息
 运行方式：
 $ npm run cypress:run 报告截图 List 格式报告 前置：在 cypress.json 文件新增&quot;reporter&rdquo;: &ldquo;list&quot;信息
-运行方式：
-$ npm run cypress:run 报告截图 NYAN 格式报告 前置：在 cypress." />
+运行方式：" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://naod.com.cn/2022/07/cypress-ui-%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95%E6%A1%86%E6%9E%B6%E5%AD%A6%E4%B9%A02-%E6%B5%8B%E8%AF%95%E6%8A%A5%E5%91%8A/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-07-08T09:49:24+08:00" />
@@ -36,7 +36,8 @@ $ npm run cypress:run 报告截图 NYAN 格式报告 前置：在 cypress." />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Cypress UI 自动化测试框架学习（2）- 测试报告"/>
-<meta name="twitter:description" content="写在前面 由于 Cypress 测试报告是建立在 Mocha 测试报告之上的，这意味着任何为 Mocha 构建的报告程序都可以与 Cypress 一起使用。
+<meta name="twitter:description" content="这一篇文章主要介绍一下如何去使用不同格式的 cypress 自动化测试报告模版
+写在前面 由于 Cypress 测试报告是建立在 Mocha 测试报告之上的，这意味着任何为 Mocha 构建的报告程序都可以与 Cypress 一起使用。
 以下是内置的 Mocha 测试类型列表（Cypress 也同样支持）：https://mochajs.org/#reporters
 前置准备工作 在 package.json 文件的 scripts 模块加入了如下脚本：&ldquo;cypress:run&rdquo;:&ldquo;cypress run&rdquo;，便于后面生成报告
 不同运行脚本的区别：
@@ -45,8 +46,7 @@ cypress run：是以无头浏览器模式跑测试用例文件夹下的所有测
 $ npm run cypress:run 报告截图 json 格式报告 前置：在 cypress.json 文件新增&quot;reporter&rdquo;: &ldquo;json&quot;信息
 运行方式：
 $ npm run cypress:run 报告截图 List 格式报告 前置：在 cypress.json 文件新增&quot;reporter&rdquo;: &ldquo;list&quot;信息
-运行方式：
-$ npm run cypress:run 报告截图 NYAN 格式报告 前置：在 cypress."/>
+运行方式："/>
 <link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/main.css" />
 
@@ -111,7 +111,8 @@ $ npm run cypress:run 报告截图 NYAN 格式报告 前置：在 cypress."/>
 			
 					
 			<div class="markdown">
-				<h2 id="写在前面">写在前面</h2>
+				<p>这一篇文章主要介绍一下如何去使用不同格式的 cypress 自动化测试报告模版</p>
+<h2 id="写在前面">写在前面</h2>
 <p>由于 Cypress 测试报告是建立在 Mocha 测试报告之上的，这意味着任何为 Mocha 构建的报告程序都可以与 Cypress 一起使用。</p>
 <p>以下是内置的 Mocha 测试类型列表（Cypress 也同样支持）：https://mochajs.org/#reporters</p>
 <h2 id="前置准备工作">前置准备工作</h2>
