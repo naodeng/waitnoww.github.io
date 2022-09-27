@@ -7,7 +7,31 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© Copyright 2022 www.naod.com.cn</copyright>
-    <lastBuildDate>Fri, 13 Mar 2020 09:07:21 +0000</lastBuildDate><atom:link href="https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E7%BB%8F%E5%8E%86/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Sep 2022 17:52:49 +0800</lastBuildDate><atom:link href="https://naod.com.cn/tags/%E6%B5%8B%E8%AF%95%E7%BB%8F%E5%8E%86/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>质量是系统性的</title>
+      <link>https://naod.com.cn/2022/09/%E8%B4%A8%E9%87%8F%E6%98%AF%E7%B3%BB%E7%BB%9F%E6%80%A7%E7%9A%84/</link>
+      <pubDate>Tue, 27 Sep 2022 17:52:49 +0800</pubDate>
+      
+      <guid>https://naod.com.cn/2022/09/%E8%B4%A8%E9%87%8F%E6%98%AF%E7%B3%BB%E7%BB%9F%E6%80%A7%E7%9A%84/</guid>
+      <description>质量是系统性的 以下是对软件质量的热点： **软件质量更多地是旨在生产质量的系统的结果，而不是个人性能的结果。**也就是说：一群平庸的程序员使用旨在生产质量的结构，将比一群在设计有其他目标的系统中工作的优秀程序员生产出更好的软件
+我所说的专为质量而设计的系统是什么意思？我所说的是： 精心设计的测试工具，使编写测试变得容易，以及鼓励编写良好测试并为工程师提供时间和空间的团队/公司文化。 易于使用、高保真开发和中转环境，以及文化，在经过充分验证之前没有压力将代码推送到生产中。 记录在案、因素充分和充分评论的代码库——这是开发节奏的结果，该节奏允许为这些活动花费大量时间。 一个具有高度 心理安全的 工作场所，让人们在陷入困境时感到自在地寻求帮助，并且… …当故障发生时，它们会受到 无可指责的审查 ，系统得到改进，以防止该类未来的故障。 我可以继续，但我希望这一点是明确的：系统质量涉及技术和人为因素，这些因素相互交织和相互作用。在最好的情况下，它们形成了一个良性循环： 伟大的测试在成为问题之前会捕捉错误，但这些测试不会神奇地出现；它们需要一个提供编写测试的时间和空间的结构。 这种结构有效，因为当工程师需要一些额外的时间来正确测试时，他们会很乐意直言不讳。 工程师们很乐意直言不讳，因为他们在心理安全高的环境中工作。 这种环境的存在部分是因为他们知道生产失败被视为系统性失败，个人不会受到惩罚、指责或羞辱。 停电被视为系统性停电，因为大多数都是系统性的。这是因为测试实践非常好，以至于单个错误在成为有影响力的失败之前很久就会被发现。 这具有深远的影响。我只想简单地提两个： 如果您的团队正在生成有缺陷的代码，请考虑这可能不是因为他们都在工作中很糟糕。这可能是因为环境不允许他们生产高质量的软件。 不要因为认为自己“只能雇用最好的人”而花费大量时间和精力在招聘上，而是将其中一些努力用于建立一个从更广泛的个人绩效中产生巨大结果的系统。 原文链接：https://jacobian.org/2022/sep/9/quality-is-systemic/?continueFlag=c1068e7e0e455bd9923ad0f16a65f620</description>
+    </item>
+    
+    <item>
+      <title>30 天的敏捷测试</title>
+      <link>https://naod.com.cn/2022/09/30-%E5%A4%A9%E7%9A%84%E6%95%8F%E6%8D%B7%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Tue, 20 Sep 2022 13:28:14 +0800</pubDate>
+      
+      <guid>https://naod.com.cn/2022/09/30-%E5%A4%A9%E7%9A%84%E6%95%8F%E6%8D%B7%E6%B5%8B%E8%AF%95/</guid>
+      <description>如果你的项目是采用敏捷测试，那么欢迎加入很棒的 30 天敏捷测试挑战。
+以下是 30 个挑战的列表，每月每天一个，打印下面的列表，把它保存在某个地方。打印出来。把它贴在墙上。让我们这样做吧！
+规则是什么？ 目标是尽可能多地的完成挑战。您可以在自己的时间范围和能力范围内做到这一点。
+您可能有图像可以分享，博客文章，视频，状态更新，无论它是什么！来参加吧！
+以下是分享进度的方法：
+在微博和朋友圈上 - 使用**#30DaysOfTesting**标签 30 天敏捷测试列表 Day 1 Buy an agile testing related book and share something you&amp;rsquo;ve learnt by day 30 买一本敏捷测试相关的书，并在第 30 天结束时分享你的所学 Day 2 Create a mindmap, document, diagram or sketchnote about what you think agile testing is用图表或文档的方式列出你理解的敏捷测试 Day 3 Find a video on YouTuBe about agile testing, then watch it!看一个敏捷测试的视频 Day 4 Read the agile manifesto and reflect on the implications for your role读敏捷宣言，并反思对你角色的影响 Day 5 Pair with a developer on a feature跟 Dev pair Day 6 Map out what your exploratory testing looks like, compare it to what other testers do列出你理解的探索式测试，并与其他人员的进行比较 Day 7 Find a visual way of representing your tests - e.</description>
+    </item>
+    
     <item>
       <title>可测性提升和可恢复性提升方案初稿</title>
       <link>https://naod.com.cn/2020/03/%E5%8F%AF%E6%B5%8B%E6%80%A7%E6%8F%90%E5%8D%87%E5%92%8C%E5%8F%AF%E6%81%A2%E5%A4%8D%E6%80%A7%E6%8F%90%E5%8D%87%E6%96%B9%E6%A1%88%E5%88%9D%E7%A8%BF/</link>
