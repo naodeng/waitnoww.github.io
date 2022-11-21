@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>什么是 API 测试和怎么去测试 API - 软件测试同学</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta itemprop="name" content="什么是 API 测试和怎么去测试 API">
+<meta itemprop="description" content="API 测试是一种测试 API 的质量、性能、安全性和可靠性的方法，以帮助定位错误并验证应用程序是否按预期运行。
+API 测试是保护 API 免受漏洞影响的最有效方法之一。它是一种测试 API 的质量、性能、安全性和可靠性的方法，以帮助定位错误并验证应用程序是否按预期运行。 测试和验证 API 在软件开发生命周期中变得越来越重要，因为 API 测试可以显着减少集成、 验证和验证 工作所需的时间。在本文中，我们将介绍您需要了解的有关 API 测试的所有信息、它的重要性以及如何使用推荐的工具进行测试。
+什么是 API？ API（应用程序编程接口）是一组功能和过程，允许应用程序和软件相互通信。它们允许开发人员和第三方用户通过互联网连接与存储在另一个设备或系统（例如数据库）上的数据进行远程交互。 API 是现代软件开发的支柱，许多网站使用它们相互连接，允许开发人员在它们之上构建自己的工具。它们还可以用于通过使用第三方库或框架向您的应用程序添加特性和功能，这将进一步提高其性能和可用性。
+什么是 API 测试？ API 测试是一种软件测试，涉及直接测试 API 以验证和验证其功能、机制、可靠性、性能和安全性。API 测试的目标是自动化需要开发人员或测试人员手动执行的测试场景。这些场景可能包括：
+连接 API 端点并直接调用它。 同时对多个端点执行请求。 根据时区或设备类型等环境变量测试端点的不同版本。 为什么使用 API 测试——优点和缺点 API 测试是黑盒测试的一种形式，因为它用于测试 API 的内部工作并确定它是否可以正确实现，而不需要用户交互或了解系统如何工作。 API 测试有助于：
+验证其他应用程序是否可以毫无问题地使用基于 API 的服务 模拟客户呼叫并寻找他们响应中的缺陷 测试您的应用程序的性能以及与其他应用程序的集成情况 降低手动测试的成本并减少所花费的时间 确保 API 测试可以用任何首选语言执行（它与语言无关） 虽然 API 测试有许多优点，但它也有缺点： 通过 API 查询提供的参数在使用前必须经过检查和验证，这可能具有挑战性。 组合参数可能很困难，因为必须检查每个组合以查看它是否包含特定设置的问题。 因为每次调用都必须按照一定的顺序发生才能保证系统的正常运行，所以调用顺序也是一个难点。 并非所有 API 生而平等。有些 API 会比其他 API 更复杂，因此需要不同的方法来成功测试它们。您还应该知道，您的应用程序进行的每个单独调用都有其自己的要求和约束（例如延迟），这意味着某些调用可能需要额外的检查，而不是同一 API 实例中的其他调用所需的检查。这些额外的检查可能意味着在每个请求/响应周期上花费的开销时间增加（这转化为更长的总体等待时间）。 如何测试 API？ API 测试方法应从精确定义的程序范围和对 API 预期功能的透彻理解开始。此外，API 测试不仅仅是为了确保您的代码能够正常工作，而且还要确保其健壮可靠。"><meta itemprop="datePublished" content="2022-11-21T11:48:10+08:00" />
+<meta itemprop="dateModified" content="2022-11-21T11:48:10+08:00" />
+<meta itemprop="wordCount" content="292">
+<meta itemprop="keywords" content="测试工具,测试相关," /><meta property="og:title" content="什么是 API 测试和怎么去测试 API" />
+<meta property="og:description" content="API 测试是一种测试 API 的质量、性能、安全性和可靠性的方法，以帮助定位错误并验证应用程序是否按预期运行。
+API 测试是保护 API 免受漏洞影响的最有效方法之一。它是一种测试 API 的质量、性能、安全性和可靠性的方法，以帮助定位错误并验证应用程序是否按预期运行。 测试和验证 API 在软件开发生命周期中变得越来越重要，因为 API 测试可以显着减少集成、 验证和验证 工作所需的时间。在本文中，我们将介绍您需要了解的有关 API 测试的所有信息、它的重要性以及如何使用推荐的工具进行测试。
+什么是 API？ API（应用程序编程接口）是一组功能和过程，允许应用程序和软件相互通信。它们允许开发人员和第三方用户通过互联网连接与存储在另一个设备或系统（例如数据库）上的数据进行远程交互。 API 是现代软件开发的支柱，许多网站使用它们相互连接，允许开发人员在它们之上构建自己的工具。它们还可以用于通过使用第三方库或框架向您的应用程序添加特性和功能，这将进一步提高其性能和可用性。
+什么是 API 测试？ API 测试是一种软件测试，涉及直接测试 API 以验证和验证其功能、机制、可靠性、性能和安全性。API 测试的目标是自动化需要开发人员或测试人员手动执行的测试场景。这些场景可能包括：
+连接 API 端点并直接调用它。 同时对多个端点执行请求。 根据时区或设备类型等环境变量测试端点的不同版本。 为什么使用 API 测试——优点和缺点 API 测试是黑盒测试的一种形式，因为它用于测试 API 的内部工作并确定它是否可以正确实现，而不需要用户交互或了解系统如何工作。 API 测试有助于：
+验证其他应用程序是否可以毫无问题地使用基于 API 的服务 模拟客户呼叫并寻找他们响应中的缺陷 测试您的应用程序的性能以及与其他应用程序的集成情况 降低手动测试的成本并减少所花费的时间 确保 API 测试可以用任何首选语言执行（它与语言无关） 虽然 API 测试有许多优点，但它也有缺点： 通过 API 查询提供的参数在使用前必须经过检查和验证，这可能具有挑战性。 组合参数可能很困难，因为必须检查每个组合以查看它是否包含特定设置的问题。 因为每次调用都必须按照一定的顺序发生才能保证系统的正常运行，所以调用顺序也是一个难点。 并非所有 API 生而平等。有些 API 会比其他 API 更复杂，因此需要不同的方法来成功测试它们。您还应该知道，您的应用程序进行的每个单独调用都有其自己的要求和约束（例如延迟），这意味着某些调用可能需要额外的检查，而不是同一 API 实例中的其他调用所需的检查。这些额外的检查可能意味着在每个请求/响应周期上花费的开销时间增加（这转化为更长的总体等待时间）。 如何测试 API？ API 测试方法应从精确定义的程序范围和对 API 预期功能的透彻理解开始。此外，API 测试不仅仅是为了确保您的代码能够正常工作，而且还要确保其健壮可靠。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://naod.com.cn/2022/11/%E4%BB%80%E4%B9%88%E6%98%AF-api-%E6%B5%8B%E8%AF%95%E5%92%8C%E6%80%8E%E4%B9%88%E5%8E%BB%E6%B5%8B%E8%AF%95-api/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-11-21T11:48:10+08:00" />
+<meta property="article:modified_time" content="2022-11-21T11:48:10+08:00" />
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="什么是 API 测试和怎么去测试 API"/>
+<meta name="twitter:description" content="API 测试是一种测试 API 的质量、性能、安全性和可靠性的方法，以帮助定位错误并验证应用程序是否按预期运行。
+API 测试是保护 API 免受漏洞影响的最有效方法之一。它是一种测试 API 的质量、性能、安全性和可靠性的方法，以帮助定位错误并验证应用程序是否按预期运行。 测试和验证 API 在软件开发生命周期中变得越来越重要，因为 API 测试可以显着减少集成、 验证和验证 工作所需的时间。在本文中，我们将介绍您需要了解的有关 API 测试的所有信息、它的重要性以及如何使用推荐的工具进行测试。
+什么是 API？ API（应用程序编程接口）是一组功能和过程，允许应用程序和软件相互通信。它们允许开发人员和第三方用户通过互联网连接与存储在另一个设备或系统（例如数据库）上的数据进行远程交互。 API 是现代软件开发的支柱，许多网站使用它们相互连接，允许开发人员在它们之上构建自己的工具。它们还可以用于通过使用第三方库或框架向您的应用程序添加特性和功能，这将进一步提高其性能和可用性。
+什么是 API 测试？ API 测试是一种软件测试，涉及直接测试 API 以验证和验证其功能、机制、可靠性、性能和安全性。API 测试的目标是自动化需要开发人员或测试人员手动执行的测试场景。这些场景可能包括：
+连接 API 端点并直接调用它。 同时对多个端点执行请求。 根据时区或设备类型等环境变量测试端点的不同版本。 为什么使用 API 测试——优点和缺点 API 测试是黑盒测试的一种形式，因为它用于测试 API 的内部工作并确定它是否可以正确实现，而不需要用户交互或了解系统如何工作。 API 测试有助于：
+验证其他应用程序是否可以毫无问题地使用基于 API 的服务 模拟客户呼叫并寻找他们响应中的缺陷 测试您的应用程序的性能以及与其他应用程序的集成情况 降低手动测试的成本并减少所花费的时间 确保 API 测试可以用任何首选语言执行（它与语言无关） 虽然 API 测试有许多优点，但它也有缺点： 通过 API 查询提供的参数在使用前必须经过检查和验证，这可能具有挑战性。 组合参数可能很困难，因为必须检查每个组合以查看它是否包含特定设置的问题。 因为每次调用都必须按照一定的顺序发生才能保证系统的正常运行，所以调用顺序也是一个难点。 并非所有 API 生而平等。有些 API 会比其他 API 更复杂，因此需要不同的方法来成功测试它们。您还应该知道，您的应用程序进行的每个单独调用都有其自己的要求和约束（例如延迟），这意味着某些调用可能需要额外的检查，而不是同一 API 实例中的其他调用所需的检查。这些额外的检查可能意味着在每个请求/响应周期上花费的开销时间增加（这转化为更长的总体等待时间）。 如何测试 API？ API 测试方法应从精确定义的程序范围和对 API 预期功能的透彻理解开始。此外，API 测试不仅仅是为了确保您的代码能够正常工作，而且还要确保其健壮可靠。"/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://naod.com.cn/css/main.css" />
+
+        <link id="dark-scheme" rel="stylesheet" type="text/css" href="https://naod.com.cn/css/dark.css" />
+
+	<script src="https://naod.com.cn/js/feather.min.js"></script>
+	
+		<script src="https://naod.com.cn/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://naod.com.cn/">软件测试同学</a></h1>
+	<div class="site-description"><p>专注于软件测试信息分享</p><nav class="nav social">
+			<ul class="flat"><li><a href="https://github.com/waitnoww/" title="Github"><i data-feather="github"></i></a></li><li><a href="/index.xml" title="RSS"><i data-feather="rss"></i></a></li></ul>
+		</nav>
+		
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="/">Home</a>
+			</li>
+			
+			<li>
+				<a href="/posts">All posts</a>
+			</li>
+			
+			<li>
+				<a href="/about">About</a>
+			</li>
+			
+			<li>
+				<a href="/tags">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">21</span>
+							<span class="rest">Nov 2022</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">什么是 API 测试和怎么去测试 API</h1>
+				</div>
+			</div>
+
+			
+			
+					
+			<div class="markdown">
+				<p>API 测试是一种测试 API 的质量、性能、安全性和可靠性的方法，以帮助定位错误并验证应用程序是否按预期运行。</p>
+<p>API 测试是保护 API 免受漏洞影响的最有效方法之一。它是一种测试 API 的质量、性能、安全性和可靠性的方法，以帮助定位错误并验证应用程序是否按预期运行。
+测试和验证 API 在软件开发生命周期中变得越来越重要，因为 API 测试可以显着减少集成、 <a href="https://www.telerik.com/blogs/verification-vs-validation-why-your-requirements-are-always-wrong">验证和验证</a> 工作所需的时间。在本文中，我们将介绍您需要了解的有关 API 测试的所有信息、它的重要性以及如何使用推荐的工具进行测试。</p>
+<h1 id="什么是-api">什么是 API？</h1>
+<p>API（应用程序编程接口）是一组功能和过程，允许应用程序和软件相互通信。它们允许开发人员和第三方用户通过互联网连接与存储在另一个设备或系统（例如数据库）上的数据进行远程交互。
+API 是现代软件开发的支柱，许多网站使用它们相互连接，允许开发人员在它们之上构建自己的工具。它们还可以用于通过使用第三方库或框架向您的应用程序添加特性和功能，这将进一步提高其性能和可用性。</p>
+<h1 id="什么是-api-测试">什么是 API 测试？</h1>
+<p>API 测试是一种软件测试，涉及直接测试 API 以验证和验证其功能、机制、可靠性、性能和安全性。API 测试的目标是自动化需要开发人员或测试人员手动执行的测试场景。这些场景可能包括：</p>
+<ul>
+<li>连接 API 端点并直接调用它。</li>
+<li>同时对多个端点执行请求。</li>
+<li>根据时区或设备类型等环境变量测试端点的不同版本。</li>
+</ul>
+<h1 id="为什么使用-api-测试优点和缺点">为什么使用 API 测试——优点和缺点</h1>
+<p>API 测试是黑盒测试的一种形式，因为它用于测试 API 的内部工作并确定它是否可以正确实现，而不需要用户交互或了解系统如何工作。
+API 测试有助于：</p>
+<ul>
+<li>验证其他应用程序是否可以毫无问题地使用基于 API 的服务</li>
+<li>模拟客户呼叫并寻找他们响应中的缺陷</li>
+<li>测试您的应用程序的性能以及与其他应用程序的集成情况</li>
+<li>降低手动测试的成本并减少所花费的时间</li>
+<li>确保 API 测试可以用任何首选语言执行（它与语言无关）
+虽然 API 测试有许多优点，但它也有缺点：</li>
+<li>通过 API 查询提供的参数在使用前必须经过检查和验证，这可能具有挑战性。</li>
+<li>组合参数可能很困难，因为必须检查每个组合以查看它是否包含特定设置的问题。</li>
+<li>因为每次调用都必须按照一定的顺序发生才能保证系统的正常运行，所以调用顺序也是一个难点。</li>
+<li>并非所有 API 生而平等。有些 API 会比其他 API 更复杂，因此需要不同的方法来成功测试它们。您还应该知道，您的应用程序进行的每个单独调用都有其自己的要求和约束（例如延迟），这意味着某些调用可能需要额外的检查，而不是同一 API 实例中的其他调用所需的检查。这些额外的检查可能意味着在每个请求/响应周期上花费的开销时间增加（这转化为更长的总体等待时间）。</li>
+</ul>
+<h1 id="如何测试-api">如何测试 API？</h1>
+<p>API 测试方法应从精确定义的程序范围和对 API 预期功能的透彻理解开始。此外，API 测试不仅仅是为了确保您的代码能够正常工作，而且还要确保其健壮可靠。</p>
+<p>什么是跨浏览器兼容性？
+您需要确保您的网站适用于不同的浏览器和设备。 <a href="https://www.telerik.com/blogs/what-is-cross-browser-compatibility">了解如何测试跨浏览器兼容性及其重要性。</a></p>
+<p>测试团队应该考虑 <a href="https://www.techtarget.com/searchapparchitecture/definition/API-testing?amp=1">以下问题</a> ：</p>
+<ul>
+<li>有哪些测试端点可用？</li>
+<li>查询成功应该有什么样的响应码？</li>
+<li>对于拒绝的请求，应该预期哪些响应代码？</li>
+<li>哪个错误消息应该显示在被拒绝请求的正文中？
+此外，应构建测试以确保用户不会对应用程序产生意外影响，API 可以处理预期的用户负载，并且 API 与各种浏览器和设备兼容。此类测试确定 API 的用户友好性和功能性以及 API 与其他平台集成的有效性。</li>
+</ul>
+<h1 id="api-测试的类型">API 测试的类型</h1>
+<p>API 测试有很多种，但最常见的是：
+**功能测试：**功能测试用于验证特定 API 中的所有功能是否正常工作。它确保 API 对给定请求提供适当的响应。
+<strong>负载测试</strong>：这种 API 测试评估 API 如何在短时间内响应大量查询。
+**安全测试：**这些测试评估 API 响应和抵御在线威胁的能力。
+**渗透测试：**这涉及不熟悉 API 的用户试图攻击 API，允许测试人员从公正的角度评估威胁向量。
+<strong>运行时和错误检测测试</strong>：这些 API 测试通常专注于监控、执行缺陷、资源泄漏或错误检测，旨在评估 API 的实际执行情况。
+**模糊测试：**在这种 API 测试中，会发送大量随机生成的请求，以查看您的 API 是否回答错误、处理任何输入不正确或崩溃。
+**验证测试：**执行这些测试以确认 API 的功能和行为。</p>
+<h1 id="rest-和-soap-api-测试">REST 和 SOAP API 测试</h1>
+<p>REST (Representational State Transfer) API 测试是一种开源 Web 自动化测试技术，用于测试在线应用程序的 RESTful API。REST API 测试的目标是提交多个 HTTP/S 查询并记录响应以确定 REST API 是否正常运行。GET、POST、PUT 和 DELETE 方法用于测试 REST API。
+另一方面，SOAP（简单对象访问协议）被创建为一种中间语言，使以各种平台和编程语言编写的应用程序之间的数据共享变得简单。</p>
+<h1 id="api-测试工具">API 测试工具</h1>
+<p>使用正确的 API 测试工具和流程，您可以构建一个强大的测试套件，涵盖您应用程序的所有特性和功能。这些 API 测试工具的范围从付费订阅到开源产品。这些工具包括：
+<strong>SoapUI</strong>： <a href="https://www.soapui.org/">此工具</a> 专注于评估 SOAP 和 REST API 功能以及 Web 服务。它是防止 API 攻击的出色工具，因为它具有易于使用的图形用户界面，提供企业级功能，并使创建和执行自动化功能、回归和负载测试变得简单。
+<strong>Salt Security</strong>：Salt 为每个现代应用程序的核心 API 提供安全性。 <a href="https://salt.security/?">Salt 平台</a> 使用由其 AI 和 ML 技术提供支持的云规模大数据引擎自动检测 API 并公开敏感数据，检测并阻止攻击者，在整个构建阶段测试和扫描 API，并提供在运行时学习的修复见解以帮助开发人员团队改善他们的 API 安全状况。
+<strong>Apache 的 JMeter</strong>：这是一个免费的开源负载和功能性 API 测试工具，用于测试各种协议和测量性能。 <a href="https://jmeter.apache.org/">Apache JMeter</a> 支持请求链接，它可用于测试动态 Web 应用程序以及静态和动态资源。
+<strong>Apigee</strong>：这是一款 <a href="https://docs.apigee.com/">Google C loud API 测试工具</a> ，专门用于 API 性能测试。为了提供数据馈送和增强通信能力，API 网关用于连接采用 RESTful API 的网站和服务。
+**Test Studio：**此 <a href="https://www.telerik.com/blogs/api-testing">API 测试工具</a> 有助于使用低代码、自动化方法测试 RESTful API，并利用 API 调用来增强自动化功能 UI 测试。
+<strong>Swagger UI</strong>： <a href="https://swagger.io/">这个开源工具</a> 帮助生成一个列出所有使用过的 API 的网页。它允许在整个 API 生命周期中进行开发，从设计和文档到测试和部署。
+<strong>Postman</strong>：这是一个 Google Chrome 应用程序，可以自动执行和验证 API 测试。为了更快地构建更好的 API， <a href="https://www.postman.com/">Postman</a> 增强了协作并简化了 API 生命周期的每个阶段。
+**OWASP ZAP：**这是一个免费的开源渗透测试工具，称为 <a href="https://www.zaproxy.org/">Zed Attack Proxy (ZAP)</a> ，由开放 Web 应用程序安全项目 (OWASP) 维护。使用此集成渗透测试工具可以轻松查找 Web 应用程序中的漏洞。</p>
+<h1 id="使用-test-studio-测试您的-api">使用 Test Studio 测试您的 API</h1>
+<p>使用易于创建和维护的 API 测试， <a href="https://docs.telerik.com/teststudio-apis/">Test Studio</a> 使团队能够增加他们的功能测试工作，而不管测试资历或专业知识如何。
+使用 Test Studio，您可以：</p>
+<ul>
+<li>无需编写任何代码即可在桌面和 Web 上自动测试 API</li>
+<li>无需额外工作即可检查 Web 服务的可靠性和完整性</li>
+<li>将您的 RESTful API 测试集成到任何部署环境中
+想要查看 Test Studio 运行情况或检查它是否满足您的测试自动化需求？ <a href="https://www.telerik.com/teststudio/live-demos">在此处</a> 请求快速演示。</li>
+</ul>
+
+			</div>
+
+			<div class="tags">
+				
+					
+						<ul class="flat">
+							
+							<li class="tag-li"><a href="/tags/%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7">测试工具</a></li>
+							
+							<li class="tag-li"><a href="/tags/%E6%B5%8B%E8%AF%95%E7%9B%B8%E5%85%B3">测试相关</a></li>
+							
+						</ul>
+					
+				
+			</div>
+
+			
+			<div class="back">
+				<a href="https://github.com/waitnoww/blob/master/content/posts/what-and-how-for-API-Testing.md" title="github"><i data-feather="github"></i> Edit this on GitHub</a>
+			</div>
+			
+			
+			<div class="back">
+				<a href="https://naod.com.cn/"><span aria-hidden="true">← Back</span></a>
+			</div>
+			
+
+			<div class="back">
+				
+					
+					Next time, we'll talk about <i>"千里之行,始于足下"</i>
+					
+				
+			</div></div>
+		
+	</div>
+	
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div>2022  © Copyright 2022 www.naod.com.cn </div>
+		
+	</nav>
+</div><script>feather.replace()</script>
+</body>
+</html>
